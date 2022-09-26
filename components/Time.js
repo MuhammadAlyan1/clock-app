@@ -29,7 +29,13 @@ const Time = ({ showMore, setShowMore }) => {
   return (
     <section className="relative mt-auto lg:mt-0 lg:min-w-[900px] xl:min-w-[1100px]">
       <div className="mt-8 flex items-center gap-4 text-2xl text-white">
-        {dayTime === 'evening' ? <MdOutlineNightlight /> : <FiSun />}
+        <p>
+          {dayTime === 'evening' || dayTime === 'night' ? (
+            <MdOutlineNightlight />
+          ) : (
+            <FiSun />
+          )}
+        </p>
         <h1 className="uppercase text-white lg:hidden">Good {dayTime}</h1>
         <h1 className="hidden uppercase text-white lg:block">
           Good {dayTime}, it&apos;s currently

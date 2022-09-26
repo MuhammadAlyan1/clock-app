@@ -7,8 +7,7 @@ import spacetime from 'spacetime';
 
 export default function Home() {
   const [showMore, setShowMore] = useState(false);
-  const isEvening = spacetime.now().dayTime() === 'evening' || 'good night';
-
+  const isEvening = spacetime.now().dayTime() === 'evening' || 'night';
   return (
     <>
       <Head>
