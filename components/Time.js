@@ -32,7 +32,7 @@ const Time = ({ showMore, setShowMore }) => {
         {dayTime === 'evening' ? <MdOutlineNightlight /> : <FiSun />}
         <h1 className="uppercase text-white lg:hidden">Good {dayTime}</h1>
         <h1 className="hidden uppercase text-white lg:block">
-          Good {dayTime}, it's currently
+          Good {dayTime}, it&apos;s currently
         </h1>
       </div>
       <h2 className="text-[6rem] font-bold uppercase tracking-wide text-white md:text-[10rem]">
