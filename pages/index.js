@@ -7,6 +7,7 @@ import spacetime from 'spacetime';
 
 export default function Home() {
   const [showMore, setShowMore] = useState(false);
+  const isEvening = spacetime.now().dayTime() === 'evening';
 
   return (
     <>
@@ -15,7 +16,7 @@ export default function Home() {
       </Head>
       <section
         className={`h-screen overflow-hidden bg-cover bg-[center_center] lg:flex lg:items-center lg:justify-between ${
-          spacetime.now().dayTime() === 'evening' ? 'bg-night' : 'bg-day'
+          isEvening ? 'bg-night' : 'bg-day'
         }`}
       >
         <div className="lg:mx-auto lg:max-w-[1100px]">
